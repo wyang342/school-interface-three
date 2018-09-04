@@ -20,7 +20,7 @@ when '5'
 end  
 ```
 
-Just like before we call a method that we have not defined yet. This method should take a hash containing all the data to make a new student object. From here, we need to do two things. First, we need to ask the user for the student's name, age, student_id number, and password. Next need to put those values into a hash and then pass that hash to our method. We can do this with multiple `gets.chomp` calls. 
+Just like before we call a method that we have not defined yet. This method should take a hash containing all the data to make a new student object. From here, we need to do two things. First, we need to ask the user for the student's name, age, student_id number, and password. Next, we need to put those values into a hash and then pass that hash to our method. We can do this with multiple `gets.chomp` calls. 
 
 ```Ruby
 # runner.rb
@@ -55,10 +55,10 @@ def add_student
 end 
 ```
 
-##### Note: 
+#### Note: 
 You may be asking, why are we re-saving every single object instead of just the new one we created? There are a few reasons. One, yes we can append a line to a `CSV` file, but later, when we want to delete rows, removing a line from say, the middle of the file, is a little trickier. It involves getting a little deeper into the `CSV` class than is necessary for this tutorial. For the sake of simplicity, we are just going to write a method that overwrites the old data with the new data. It's not the most performative, but for a small app like this, it will do just fine.  
 
-##### Write the `save_students` method 
+#### Write the `save_students` method 
 Check out the `CSV` module in the Ruby docs to help you. Make sure you are saving the file with headers. Remember we are using these headers to set our keys when we read from `students.csv` to create student objects. If we don't have them, our app will break. HINT: The headers are just the first row of data in the `CSV` file. I recommend making a copy of the `students.csv` to use while you test as it is very easy to erase all the data while you are working out your method. 
 
 When you are done, make sure you add the method call to the end of `add_student`. Now every time a new student is added to the `@students` array, it will also get saved to our `CSV` file. Test this feature by adding a new student, exiting the program, and then running it again to see if the data persisted. You can also see the row get added in your `CSV` file. 
