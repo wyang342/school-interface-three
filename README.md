@@ -57,7 +57,7 @@ When you are done, make sure you add the method call to the end of `add_student`
 
 ## Release 2: Deleting Records  
 
-The last feature we need to implement is the ability to delete a student record. Follow the same procedure as before. First, add a case to the case statement. What information will you need from the user in order to delete a record? How will you get it and pass it to your method? Then, in `school.py` define a method `delete_student()`. How can you use the `save_student()` method again to help you out here? 
+The last feature we need to implement is the ability to delete a student record. Follow the same procedure as before. First, add a condition to the if statement. What information will you need from the user in order to delete a record? How will you get it and pass it to your method? Then, in `school.py` define a method `delete_student()`. How can you use the `save_student()` method again to help you out here? 
 
 
 
