@@ -18,7 +18,7 @@ elif mode == '5':
   break  
 ```
 
-Just like before we call a method that we have not defined yet. This method should take a hash containing all the data to make a new student object. From here, we need to do two things. First, we need to ask the user for the student's name, age, student_id number, and password. Next, we need to put those values into a dictionary and then pass that dictionary to our method. We can do this with multiple `input()` calls. 
+Just like before we call a method that we have not defined yet. This method should take a dictionary containing all the data to make a new student object. From here, we need to do two things. First, we need to ask the user for the student's name, age, student_id number, and password. Next, we need to put those values into a dictionary and then pass that dictionary to our method. We can do this with multiple `input()` calls. 
 
 ```Python
 # runner.py
