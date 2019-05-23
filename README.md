@@ -8,14 +8,14 @@ Let's make it so our user can add student information to our database. We'll nee
 # runner.py
 if mode == '1':
   school.list_students()
-  elif mode == '2':
-    student_id = input('Enter student id:')
-    student = school.find_student_by_id(student_id)
-    print(str(student))
-  elif mode == '3':  
-    school.add_student(student_data)
-  elif mode == '5':
-    break  
+elif mode == '2':
+  student_id = input('Enter student id:')
+  student = school.find_student_by_id(student_id)
+  print(str(student))
+elif mode == '3':  
+  school.add_student(student_data)
+elif mode == '5':
+  break  
 ```
 
 Just like before we call a method that we have not defined yet. This method should take a hash containing all the data to make a new student object. From here, we need to do two things. First, we need to ask the user for the student's name, age, student_id number, and password. Next, we need to put those values into a dictionary and then pass that dictionary to our method. We can do this with multiple `input()` calls. 
