@@ -43,7 +43,9 @@ You may have noticed a huge problem with our program. Yes, we can add students, 
 **Note:** You may be asking, why are we re-saving every single object instead of just the new one we created? There are a few reasons. One, yes we can append a line to a `CSV` file, but later, when we want to delete rows, removing a line from say, the middle of the file, is a little trickier. It involves getting deeper into the `CSV` module than is necessary for this tutorial. For the sake of simplicity, we are just going to write a method that overwrites the old data with the new data. It's not the most performative, but for a small app like this, it will do just fine.
 
 **Writing to CSVs**:
-Using the [CSV docs](https://docs.python.org/3/library/csv.html), figure out how to write to a CSV (hint - you may need headers). It is recommended that you keep a copy of the `students.csv` handy while testing just in case you erase all the data in your original CSV.
+Using the [CSV docs](https://docs.python.org/3/library/csv.html), figure out how to write to a CSV. It is recommended that you keep a copy of the `students.csv` handy while testing just in case you erase all the data in your original CSV.
+
+Two hints: the docs are likely unsatisfactory (i.e., you'll need to Google around to get a good answer) and you need headers in your CSV.
 
 ## Release 2: Deleting Records  
 
